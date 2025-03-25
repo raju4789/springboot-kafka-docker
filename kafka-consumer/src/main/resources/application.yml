@@ -10,3 +10,9 @@ spring:
       auto-offset-reset: earliest # This config defines the offset to start reading messages from. The default value is latest, which means that the consumer will only read messages published after the consumer has started. The earliest value means that the consumer will read all messages from the beginning.
 server:
   port: 8082
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
